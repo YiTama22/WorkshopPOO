@@ -9,13 +9,9 @@
         }
 
 
-        public string AddProduct(Product productInvoce)
+        public void AddProduct(Product productInvoce)
         {
-            string totalDescriptionProductsInvoice = "";
-            _Products.Add(productInvoce);
-            totalDescriptionProductsInvoice += $"\n{productInvoce}";
-
-            return totalDescriptionProductsInvoice;
+             _Products.Add(productInvoce);
         }
         public override string ToString()
         {
